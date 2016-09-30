@@ -45,7 +45,7 @@ if (isset($update->edited_message)){
   //$up = file_get_contents(__DIR__.'/users/'.$eid.'.json');
   //str_replace("edited_message","message",$up);
 }elseif(preg_match('/^\/([Ss]tart)/',$text1)){
-  $text = "به ربات ادیت نکن\nخوش آمدید\nبرای اد کردن من به گروه بر روی لینک زیر بزنید\nhttps://telegram.me/DontEdit_BOT?startgroup=new";
+  $text = "به ربات ادیت نکن\nخوش آمدید\nبرای اد کردن من به گروه بر روی لینک زیر بزنید\nhttps://telegram.me/edit_tahat4tt_bot?startgroup=new";
   bot('sendmessage',[
     'chat_id'=>$chat_id,
     'text'=>$text,
@@ -53,10 +53,10 @@ if (isset($update->edited_message)){
     'reply_markup'=>json_encode([
       'inline_keyboard'=>[
         [
-          ['text'=>'alireza_PT','url'=>'https://telegram.me/alireza_PT']
+          ['text'=>'alireza_PT','url'=>'https://telegram.me/tahat4tt']
         ],
         [
-          ['text'=>'CreateBOT','url'=>'https://telegram.me/create_antispam_bot']
+          ['text'=>'CreateBOT','url'=>'https://telegram.me/tahat4tt_bot']
         ]
       ]
     ])
@@ -73,7 +73,8 @@ if (isset($update->edited_message)){
 }elseif(isset($update->message-> new_chat_member )){
 bot('sendMessage',[
       'chat_id'=>$chat_id,
-      'text'=>"به گروه خوش آمدید "
+      'text'=>"سلام به این گروه خوش امدید
+ادمین و سازنده من @tahat4tt "
     ]);
 }
   
