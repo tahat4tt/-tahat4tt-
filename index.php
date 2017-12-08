@@ -1,7 +1,7 @@
 <?php
 ob_start();
-define('API_KEY'229666937:AAG0dMUJHXbG94j9Bac7iO_4XKiz_fCkBjw');
-$admin = "149069104";
+define('API_KEY'501600610:AAE5ZonU-LrHdI-rA5AqUGUvwkRnXWcmGVk');
+$admin = "94494924";
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
@@ -53,10 +53,10 @@ if (isset($update->edited_message)){
     'reply_markup'=>json_encode([
       'inline_keyboard'=>[
         [
-          ['text'=>'alireza_PT','url'=>'https://telegram.me/tahat4tt']
+          ['text'=>'artbey','url'=>'https://telegram.me/art_bey']
         ],
         [
-          ['text'=>'CreateBOT','url'=>'https://telegram.me/tahat4tt_bot']
+          ['text'=>'artbey','url'=>'https://telegram.me/dasiarchanelbot']
         ]
       ]
     ])
@@ -74,7 +74,7 @@ if (isset($update->edited_message)){
 bot('sendMessage',[
       'chat_id'=>$chat_id,
       'text'=>"سلام به این گروه خوش امدید
-ادمین و سازنده من @tahat4tt "
+ادمین و سازنده من @art_bey "
     ]);
 }
   
